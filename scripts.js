@@ -9,8 +9,8 @@ function loadTeams() {
     teamItem.innerHTML = `
             <span>${team.name}</span>
             <span>${team.score}</span>
-            <button onclick="incrementScore(${index})">+1</button>
-            <button onclick="decrementScore(${index})">-1</button>
+            <button onclick="incrementScore(${index})">+</button>
+            <button onclick="decrementScore(${index})">-</button>
             <button onclick="removeTeam(${index})">Remove</button>
         `;
     teamList.appendChild(teamItem);
