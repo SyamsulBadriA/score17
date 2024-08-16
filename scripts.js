@@ -30,7 +30,7 @@ function addTeam(e) {
 
 function incrementScore(index) {
   let teams = JSON.parse(localStorage.getItem("teams")) || [];
-  teams[index].score += 1;
+  teams[index].score += 100;
   localStorage.setItem("teams", JSON.stringify(teams));
   loadTeams();
 }
@@ -38,7 +38,7 @@ function incrementScore(index) {
 function decrementScore(index) {
   let teams = JSON.parse(localStorage.getItem("teams")) || [];
   if (teams[index].score > 0) {
-    teams[index].score -= 1;
+    teams[index].score -= 100;
     localStorage.setItem("teams", JSON.stringify(teams));
     loadTeams();
   }
